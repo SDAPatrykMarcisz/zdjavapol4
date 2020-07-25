@@ -11,10 +11,21 @@ public class Ex3Runner {
         map.put("ala", "kot");
         map.put("pies", "donek");
 
-        for (Map.Entry<String, String> entry : map.entrySet()){
-
+        //v1
+        int i = 0;
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+            System.out.print("klucz: " + entry.getKey() + " Wartosc: "
+                    + entry.getValue());
+            if (map.size()-1 == i) {
+                System.out.println(".");
+            }
+            else{
+                System.out.println(",");
+            }
+            i++;
         }
 
+        //v2
         for(Iterator<Map.Entry<String, String>> it = map.entrySet().iterator(); it.hasNext();){
             Map.Entry<String, String> next = it.next();
             System.out.print(String.format("klucz: %s, wartosc: %s", next.getKey(), next.getValue()));
