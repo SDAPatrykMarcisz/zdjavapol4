@@ -11,11 +11,12 @@ public class Storage {
 
     public void addToStorage(String key, String value){
         if(internalStorage.containsKey(key)){
-            List<String> values = internalStorage.get(key);
-            values.add(value);
+            List<String> listOfValues = internalStorage.get(key);
+            listOfValues.add(value);
         } else {
-            List<String> values = new ArrayList<>();
-            internalStorage.put(key, values);
+            List<String> listOfValues = new ArrayList<>();
+            listOfValues.add(value);
+            internalStorage.put(key, listOfValues);
         }
     }
 
