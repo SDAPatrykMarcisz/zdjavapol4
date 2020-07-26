@@ -1,8 +1,27 @@
 package zadania.streamy.ex1;
 
+import java.util.Collections;
+import java.util.List;
+
 public class Ex7Runner {
     public static void main(String[] args) {
 
+    }
+
+    static void ex1(){
+
+    }
+
+    static void ex2(){
+
+    }
+
+    static void ex3(){
+
+    }
+
+    static List<Person> personList(){
+        return Collections.emptyList();
     }
 }
 
